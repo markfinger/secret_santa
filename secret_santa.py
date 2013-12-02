@@ -30,6 +30,7 @@ for name, recipient in pairings.iteritems():
     server.sendmail(from_addr, to_addrs, msg)
     server.quit()
 
-    # Try not to anger the Gods o' Spam
     print 'Sent to ' + to_addrs
+    
+    # Try not to anger the Gods o' Spam
     time.sleep(5)
